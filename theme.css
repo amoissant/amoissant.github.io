@@ -1,0 +1,293 @@
+html {
+    font-size: 12pt;
+    background-color: grey;
+    font-family: arial,sans-serif;
+    font-size: small;
+}
+
+a {
+    color: #00E;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #00E;
+}
+
+#page {
+    width: 21cm;
+    height: 29.7cm;
+    margin: 20px auto;
+    background-color: white;
+}
+
+#bandeau_recherche {
+    background-color: #f1f1f1;
+    width: 100%;
+    padding: 15px 0 15px 20px;
+    box-sizing: border-box;
+}
+
+#bandeau_recherche > * {
+    vertical-align: middle;
+}
+
+#doodle {
+    width : 95px;
+}
+
+#bouton_recherche_cont {
+    border: 1px solid #4285f4;
+    height: 24px;
+    display: inline-block;
+    border-radius: 0 2px 2px 0;
+    margin-left: -5px;
+}
+
+#bouton_recherche {
+    width: 60px;
+    background: linear-gradient(#4387FD, #4683EA);
+    border: 0 none transparent;
+    height: 24px;
+}
+
+#input_recherche {
+    width: 280px;
+    display: inline;
+    height: 24px;
+    margin-left: 20px;
+    padding : 0 0 0 10px;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-style: solid;
+    border-width: 1px;
+}
+
+#bouton_recherche img {
+    vertical-align: middle;
+}
+
+#tel_mail_conteneur {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    margin-top: -5px;
+}
+
+#tel_mail_conteneur  *{
+    vertical-align: middle;
+}
+
+#tel_mail_conteneur img{
+    width : 20px;
+}
+
+#profil {
+    border-radius: 15px;
+    float: right;
+    margin-right: 20px;
+}
+
+#resume_conteneur {
+    width: 353px;
+    display: inline-block;
+    float: right;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    margin: 20px 20px 0 0;
+}
+
+#resume_texte_cont {
+    padding: 10px;
+    line-height: 1.24;
+}
+
+#resume_titre {
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+
+#resume_fonction {
+    font-size: 10pt;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+#resume_texte {
+    margin-bottom: 2ex;
+}
+
+#photo_autres_conteneur {
+    width: 60%;
+    display: inline-block;
+}
+
+#photos_conteneur {
+    overflow: hidden;//pour ne pas avoir une hauteur égale à 0
+}
+
+#photos_conteneur > * {
+    position: relative;
+    overflow: hidden;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    float:left;
+}
+
+#photos_conteneur img {
+    position: absolute;
+}
+
+#portrait_cont {
+    width: 150px;
+    height: 150px;
+}
+
+#portrait_cont > img{
+    height: 100%;
+}
+
+#circuit_cont {
+    width: 112px;
+    height: 80px;
+}
+
+#circuit_cont > img{
+    height: 100%;
+    left:-7px;
+}
+
+#mamba_cont {
+    width: 88px;
+    height: 80px;
+}
+
+#mamba_cont > img{
+    height: 100%;
+    left: 5px;
+}
+
+#clean_code_cont {
+    width: 100px;
+    height: 69px;
+}
+
+#clean_code_cont > img{
+    width: 100%;
+}
+
+#cible_cont {
+    width: 100px;
+    height: 69px;
+}
+
+#cible_cont > img{
+    width: 205%;
+    left: -22px;
+}
+
+#plus_images {
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.4);
+    color: #FFF;
+    font-size: 14px;
+    text-shadow: 0px 0px 2px #000, 0px 0px 3px #000;
+    padding: 6px 6px;
+    position: relative;
+    top: -27px;
+    float: right;
+    margin: 0 1px -26px 0;//pour empecherde prendre de la heuteur dans son parent
+}
+
+#categories {
+    color: #777;
+    border-bottom: 1px solid #EBEBEB;
+    display: inline-block;
+    padding-right: 70px;
+}
+
+#categories > span {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 15px 5px;
+}
+
+#categories > .selection {
+    color: #DD4B39;
+    border-bottom : 3px solid #DD4B39;
+}
+
+.fleche {
+    border-color: #909090 transparent;
+    border-style: solid;
+    border-width: 4px 4px 0px;
+    width: 0px;
+    height: 0px;
+    /*position: relative;
+    top: 9px;
+    left: 6px;*/
+    float: right;
+    margin: 4px 0 0 3px;
+}
+
+.resume_info {
+    margin-top: 1ex;
+    font-weight: bold;
+    margin-right: 0.5ex;
+}
+
+.info_lien {
+    font-weight: normal;
+
+}
+
+#dates_conteneur, #nuage_conteneur {
+    padding: 0 10px;
+}
+
+.resume_titre {
+    font-size: 16pt;
+    display: inline-block;
+    margin-top: 2ex;
+}
+
+#date_titre {
+    font-size: 16pt;
+    display: inline-block;
+    margin-top: 2ex;
+}
+
+#date_table {
+    font-size : 9pt;
+    width: 100%;
+    line-height: 1.25;
+    margin-top: 1ex;
+}
+
+#date_table tr {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+#date_table td {
+    vertical-align: middle;
+}
+
+#date_table td:first-child{
+    color: #00E;
+    padding: 1ex 1ex 1ex 0px;
+    width: 30%
+}
+
+#date_table td:nth-child(2){
+    text-align: center;
+}
+
+#date_table td:nth-child(3){
+    text-align: center;
+    width: 38%;
+}
+
+#nuage {
+    width: 100%;
+}

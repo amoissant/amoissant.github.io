@@ -1,0 +1,30 @@
+
+5	JAVA
+4	c#
+4	.NET
+4	Microsoft MVC
+2	Android
+2	HTML5
+2	CSS3
+2	javascript prototype
+2	SQL
+2	SWT 
+2	Hibernate
+2	Fluent NHibernate
+2	Oracle
+2	JEE
+2	SqlServer
+2	json
+2	POO
+2	tests unitaires
+2	mock
+2	injection dépendance
+2	design pattern
+2	refactoring
+2	SOAP
+2	CQRS
+2	aggregate as document
+2	veille technologique
+2	clean code
+2	Webservices
+2	API json
