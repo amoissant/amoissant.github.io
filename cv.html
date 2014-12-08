@@ -4,8 +4,9 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="reset.css"></link>
     <link rel="stylesheet" type="text/css" href="theme.css"></link>
+    <script type="text/javascript" src="uri.js"></script>
 </head>
-
+<title>Anthony Moissant - CV</title>
 <body>
     <div id="page">
         <div id="bandeau_recherche">
@@ -19,12 +20,12 @@
             <img id="profil" src="images/profil.jpg"/>
             <div id="tel_mail_conteneur">
                 <div>
-                    <img id="telephone" src="images/tel.png" />
-                    <a href="callto:0674396406">06 74 39 64 06</a>
+                    <img src="images/tel.png" />
+                    <a id="telephone" href="">** ** ** ** **</a>
                 </div>
                 <div>
-                    <img id="mail" src="images/mail.png" />
-                    <a href="mailto:anthony.moissant@gmail.com">anthony.moissant@gmail.com</a>
+                    <img src="images/mail.png" />
+                    <a id="mail" href="">****.****@***.**</a>
                 </div>
             </div>
         </div>
@@ -35,24 +36,23 @@
                 <div class="titre">StacValley - Socle de communication entre applications web et Forms <span class="date"> - 2014</span></div>
                 <div class="resume">Socle pour la communication entre deux applications web ou Oracle Forms.</div>
                 <div class="competence_titre">Compétences acquises : </div>
-                <div class="competence_texte">CQRS, javascript prototype, R&D java, JEE, Forms, PL/SQL</div>
+                <div class="competence_texte">CQRS, javascript prototype, R&D java, JEE, Forms</div>
             </article>
             <article class="experience">
                 <div class="titre">e-Apprentissage - Déclaration des contrats d'Apprentissage en ligne <span class="date"> - 2013<span class="fleche"></span>2014</span></div>
                 <a class="url" href="http://www.e-apprentissage.fr">www.e-apprentissage.fr</a>
-                <div class="resume">Réecriture du module avec tests unitaires et architecture CQRS. Partie fonctionnelle très riche. Versionning sous TFS.</div>
+                <div class="resume">Réecriture du module avec tests unitaires et pattern CQRS. Partie fonctionnelle très riche. Versionning sous TFS.</div>
                 <div class="competence_titre">Compétences acquises : </div>
-                <div class="competence_texte">Développement full stack : BDD Oracle, C# .NET, Microsoft MVC 3, javascript objet, html, css, Ajax, TFS, CQRS, aggrégats, TDD et DDD.</div>
+                <div class="competence_texte">Développement full stack : BDD Oracle, C# .NET, Microsoft MVC 3, javascript objet, HTML, CSS, Ajax, TFS, CQRS, aggrégats, TDD et DDD.</div>
             </article>
             <article class="experience">
                 <div class="titre">WebServices pour e-Apprentissage <span class="date"> - 2011<span class="fleche"></span>2014</span></div>
-                <div class="resume">Maintenance et évolutions des webservices. Ajouts de test unitaires, d'intégration et de supervision (20 clients).</div>
+                <div class="resume">Maintenance et évolutions des webservices. Ajouts de tests unitaires, d'intégration et de supervision.</div>
                 <div class="competence_titre">Compétences acquises : </div>
                 <div class="competence_texte">JEE, SOAP, tests intégration, gestion d'erreur.</div>
             </article>
             <article class="experience">
-                <div class="titre">CisLib - Bibliothèque JEE d'accès à la base de données <span class="date"> - 2014</span></div>  
-                <div class="resume">Bibliothèque partagée par les différents modules JEE du progiciel pour gérer les accès base de données (JPA + JDBC).</div>
+                <div class="titre">Bibliothèque JEE d'accès à la base de données <span class="date"> - 2014</span></div>                  <div class="resume">Bibliothèque partagée par les différents modules JEE du progiciel pour gérer les accès base de données (JPA + JDBC).</div>
                 <div class="competence_titre">Compétences acquises : </div>
                 <div class="competence_texte">JEE, JPA, JDBC, accès couches PL/SQL, gestion connexion et transaction, tests unitaires, mock, injection dépendance.</div>
             </article>
@@ -141,5 +141,12 @@
         </div>
     </div>
 </body>
-
+<script type="text/javascript">
+    var paramètres = URI.parseQuery(new URI().query());
+    paramètres.tel = paramètres.tel.replace(/(\d)(?=(\d{2})+$)/g, '$1 ');
+    document.querySelector('#telephone').innerHTML = paramètres.tel;
+    var emailDom = document.querySelector('#mail');
+    emailDom.setAttribute('href', 'mailto:'+paramètres.mail);
+    emailDom.innerHTML = paramètres.mail;
+</script>
 </html>
